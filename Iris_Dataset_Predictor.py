@@ -60,7 +60,7 @@ st.text('Selected: {}'.format(petal_width))
 
 
 clf = load('irisdata.joblib')
-if (st.button('Iris Predictor')):
+if (st.button('Iris Predictor Predict')):
     classs_id=clf.predict([[sepal_length, sepal_width, petal_length, petal_width]])
     st.write(classes[classs_id][0])
    
